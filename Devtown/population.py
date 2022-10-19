@@ -9,3 +9,4 @@ del_pop_den = del_popu/del_area
 print ('Is the population density is greater')
 a = mum_pop_den == del_pop_den
 print (a)
+ 
