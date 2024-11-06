@@ -1,23 +1,19 @@
-# List to store tasks
 tasks = []
 
-# Function to add a task
 def add_task():
     title = input("Enter the task title: ")
     description = input("Enter the task description: ")
     tasks.append({"title": title, "description": description})
     print("Task Added Successfully")
 
-# Function to view all tasks
 def view_task():
     if tasks:
         print("Tasks:")
-        for idx, task in enumerate(tasks, start=1):  # Changed to "tasks" for the list and "task" for each item
+        for idx, task in enumerate(tasks, start=1): 
             print(f"{idx}. Title: {task['title']}, Description: {task['description']}")
     else:
         print("No tasks available")
 
-# Function to update a task
 def update_task():
     view_task()
     if tasks:
@@ -36,7 +32,6 @@ def update_task():
     else:
         print("No tasks available")
 
-# Function to delete a task
 def delete_task():
     view_task()
     if tasks:
@@ -49,7 +44,6 @@ def delete_task():
     else:
         print("No tasks available")
 
-# Main function to manage tasks
 def main():
     while True:
         print("\nTask Manager")
@@ -75,3 +69,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
